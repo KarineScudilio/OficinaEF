@@ -1,0 +1,342 @@
+
+/* ==========================================
+   DOGGIE INN - LOGIN E CADASTRO
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8d9eb;
+    color: #24315b;
+}
+
+/* Página */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #f9d8ed 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            #e9d9f7 0%,
+            transparent 35%
+        ),
+        #f4c9e3;
+}
+
+/* Cartão principal */
+
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 650px;
+
+    background-color: #fffdf7;
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 60px rgba(36, 49, 91, 0.15);
+}
+
+/* Área ilustrativa */
+
+.login-image {
+    flex: 1;
+
+    background-color: #f9e7d9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+.image-content {
+    max-width: 350px;
+}
+
+.paw {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.login-image h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #24315b;
+    margin-bottom: 20px;
+}
+
+.login-image h2 {
+    font-size: 25px;
+    color: #24315b;
+    margin-bottom: 15px;
+}
+
+.login-image p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #62677c;
+}
+
+.dog-image {
+    display: block;
+    font-size: 130px;
+    margin: 25px 0;
+}
+
+.image-footer {
+    font-size: 13px !important;
+}
+
+/* Formulário */
+
+.login-form-container {
+    flex: 1;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    font-size: 35px;
+}
+
+.login-header h2 {
+    color: #24315b;
+    font-size: 29px;
+    font-weight: 800;
+    margin: 15px 0 10px;
+}
+
+.login-header p {
+    color: #777b91;
+    font-size: 14px;
+}
+
+/* Campos */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #24315b;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    margin-bottom: 9px;
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 16px;
+
+    border: 1px solid #e1dce8;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+    color: #24315b;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #24315b;
+
+    box-shadow:
+        0 0 0 3px rgba(36, 49, 91, 0.08);
+}
+
+.form-control::placeholder {
+    color: #a2a2b2;
+}
+
+/* Botão */
+
+.login-button {
+    width: 100%;
+    height: 52px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #24315b;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #394b83;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(36, 49, 91, 0.2);
+}
+
+/* Cadastro e links */
+
+.register-container {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.register-container p {
+    display: inline;
+    color: #777b91;
+}
+
+.register-container a {
+    color: #24315b;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    margin-left: 5px;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* Login externo */
+
+.external-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.external-login p {
+    color: #777b91;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.external-login-button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background-color: white;
+    color: #24315b;
+
+    border: 1px solid #dedee8;
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.external-login-button:hover {
+    background-color: #f9e7f1;
+}
+
+/* Validação */
+
+.validation-error {
+    color: #d95370;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.validation-error ul {
+    padding-left: 20px;
+}
+
+/* Rodapé */
+
+.login-footer {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #62677c;
+    font-size: 12px;
+}
+
+/* Responsividade */
+
+@media (max-width: 750px) {
+
+    .login-container {
+        flex-direction: column;
+        max-width: 480px;
+    }
+
+    .login-image {
+        padding: 30px 20px;
+    }
+
+    .login-image h1 {
+        font-size: 32px;
+    }
+
+    .login-image h2 {
+        font-size: 21px;
+    }
+
+    .dog-image {
+        font-size: 100px;
+        margin: 15px 0;
+    }
+
+    .login-form-container {
+        padding: 35px 25px;
+    }
+
+    .login-header h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,126 @@
+
+/* Fundo da página */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff0f3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #25334a;
+}
+
+/* Área principal */
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+/* Cartão de cadastro */
+.register-card {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(37, 51, 74, 0.12);
+}
+
+/* Título */
+.register-card h1 {
+    text-align: center;
+    color: #25334a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Texto abaixo do título */
+.register-subtitle {
+    text-align: center;
+    color: #777777;
+    margin-bottom: 30px;
+}
+
+/* Labels */
+.register-card label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #25334a;
+}
+
+/* Campos */
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #e2cbd1;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    outline: none;
+    background: #fffafb;
+}
+
+/* Destaque ao selecionar um campo */
+.register-card input:focus {
+    border-color: #e88ca5;
+    box-shadow: 0 0 0 3px rgba(232, 140, 165, 0.18);
+}
+
+/* Botão de cadastro */
+.register-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #e88ca5;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Efeito do botão */
+.register-button:hover {
+    background: #d87391;
+}
+
+/* Mensagens de validação */
+.text-danger {
+    color: #d9365b;
+    font-size: 13px;
+}
+
+/* Link para login */
+.register-login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #777777;
+}
+
+.register-login-link a {
+    color: #d87391;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 500px) {
+    .register-card {
+        padding: 25px;
+    }
+
+    .register-card h1 {
+        font-size: 25px;
+    }
+}
+    

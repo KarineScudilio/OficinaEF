@@ -1,0 +1,64 @@
+@page
+@model RegisterModel
+
+@{
+    ViewData["Title"] = "Criar conta";
+}
+
+<link rel="stylesheet" href="~/css/registro.css" asp-append-version="true" />
+
+<div class="register-container">
+    <div class="register-card">
+
+        <h1>Criar conta</h1>
+        <p class="register-subtitle">
+            Faça seu cadastro para entrar no Doggie Inn!
+        </p>
+
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="register-field">
+                <label asp-for="Input.Email">E-mail</label>
+                <input asp-for="Input.Email"
+                       type="email"
+                       placeholder="Digite seu e-mail" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="register-field">
+                <label asp-for="Input.Password">Senha</label>
+                <input asp-for="Input.Password"
+                       type="password"
+                       placeholder="Crie uma senha" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="register-field">
+                <label asp-for="Input.ConfirmPassword">Confirmar senha</label>
+                <input asp-for="Input.ConfirmPassword"
+                       type="password"
+                       placeholder="Digite a senha novamente" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="register-button">
+                Criar minha conta
+            </button>
+
+        </form>
+
+        <p class="register-login-link">
+            Já tem uma conta?
+            <a asp-page="./Login">Faça login</a>
+        </p>
+
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+Y
+y
